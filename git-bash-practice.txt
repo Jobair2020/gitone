@@ -972,9 +972,3 @@ Updating 62ff0c4..6010009
 Fast-forward
  three.txt | 1 +
  1 file changed, 1 insertion(+)
-
-jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
-$ ^C
-
-jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
-$
