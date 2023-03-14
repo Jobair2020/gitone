@@ -1,0 +1,853 @@
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ mkdr gitone
+bash: mkdr: command not found
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ mkdir gitone
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ cd
+
+jobai@DELL MINGW64 ~
+$ cd gitone
+bash: cd: gitone: No such file or directory
+
+jobai@DELL MINGW64 ~
+$ cd '/d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ touch one.txe
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ touch two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ mkdir myFolder
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ cd myFolder
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ touch touch three.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ cd ../
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ git init
+Initialized empty Git repository in D:/3rdYear1stTerm/Software Engineerione/.git/
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ cd ../
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ git clone hhttps://github.com/Jobair2020/gitone.git
+git: 'clonee' is not a git command. See 'git --help'.
+
+The most similar command is
+        clone
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ git clone https://github.com/Jobair2020/gitone.git
+Cloning into 'gitone'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ ls
+gitone/  gittwo/
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ cd gitone
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/La
+$ ls
+one.txt  two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ mkdir myFolder
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ cd myFolder
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder (main)
+$ touch three.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder (main)
+$ pwd
+/d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder (main)
+$ cd ../
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add --all
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   two.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+M       two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add -A
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        modified:   two.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+M       two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+        modified:   two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ pwd
+/d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        modified:   two.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+M       two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ cd myFolder
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder (main)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   three.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../one.txt
+        modified:   ../two.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+M       two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder (main)
+$ git ../
+git: '../' is not a git command. See 'git --help'.
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder (main)
+$ cd ../
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+M       two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add --all
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ touch four.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        modified:   two.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        four.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$  git add *
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+D       two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+        deleted:    two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        four.txt
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ ls
+four.txt  myFolder/  one.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    two.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        four.txt
+        myFolder/
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$  git reset
+Unstaged changes after reset:
+M       one.txt
+D       two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+        deleted:    two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        four.txt
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add *.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   four.txt
+        modified:   one.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myFolder/
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   four.txt
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        deleted:    two.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git commit -m "I have made some changes to files"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'jobai@DELL.(none)')
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   four.txt
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        deleted:    two.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git commit -m "I have made some changes"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'jobai@DELL.(none)')
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git config --global user.email "jobairnahian2017@gmail.com"
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git config --global user.name "Jobair Al Nahian"
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ Omit --global
+bash: Omit: command not found
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git omit --global
+git: 'omit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git commit -m "I have made some changes"
+[main 8bac16e] I have made some changes
+ 4 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 four.txt
+ create mode 100644 myFolder/three.txt
+ delete mode 100644 two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset HEAD~
+Unstaged changes after reset:
+M       one.txt
+D       two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+        deleted:    two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        four.txt
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git commit -m "I have made some changes"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+        deleted:    two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        four.txt
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   four.txt
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        deleted:    two.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git commit -m "I have made some changes"
+[main 43ee2a2] I have made some changes
+ 4 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 four.txt
+ create mode 100644 myFolder/three.txt
+ delete mode 100644 two.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    four.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset
+Unstaged changes after reset:
+D       four.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ gir reset --hard
+bash: gir: command not found
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset --hard
+HEAD is now at 43ee2a2 I have made some changes
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git rm four.txt
+rm 'four.txt'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ gir status
+bash: gir: command not found
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    four.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset --hard
+HEAD is now at 43ee2a2 I have made some changes
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git rm four.txt
+error: the following file has local modifications:
+    four.txt
+(use --cached to keep the file, or -f to force removal)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git rm tow -f
+fatal: pathspec 'tow' did not match any files
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git rm four.txt -f
+rm 'four.txt'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset --hard
+HEAD is now at 43ee2a2 I have made some changes
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git rm -cached four.txt
+error: did you mean `--cached` (with two dashes)?
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git rm --cached four.txt
+rm 'four.txt'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    four.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        four.txt
+
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git reset
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ ls
+four.txt  myFolder/  one.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ cd myFolder
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder (main)
+$ ls
+three.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone/myFolder (main)
+$ cd ../
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git branch
+* main
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git branch development
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git branch
+  development
+* main
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git checkout development
+Switched to branch 'development'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git status
+On branch development
+nothing to commit, working tree clean
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ touch three.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git status
+On branch development
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        three.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git commit -m "I created three.txt"
+[development 585444f] I created three.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 three.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git status
+On branch development
+nothing to commit, working tree clean
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git commit -m "I changed four.txt "
+[main 2a003e9] I changed four.txt
+ 1 file changed, 3 insertions(+)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git checkout development
+Switched to branch 'development'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git merge main -m "merging on development with main"
+Merge made by the 'ort' strategy.
+ four.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git merge development -m "merging on main wi dev"
+Updating 2a003e9..16613ce
+Fast-forward (no commit created; -m option ignored)
+ three.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 three.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ ls
+four.txt  myFolder/  one.txt  three.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git branch staging
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git checkout staging
+Switched to branch 'staging'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (staging)
+$ git status
+On branch staging
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (staging)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (staging)
+$ git commit -m "tumi"
+[staging 8da19d0] tumi
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (staging)
+$ git checkout development
+Switched to branch 'development'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git commit -m " added on two .txt"
+[development 9bfbf2c]  added on two .txt
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git merge staging
+Auto-merging four.txt
+CONFLICT (content): Merge conflict in four.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development|MERGING)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development|MERGING)
+$ git commit -m "merge solved"
+[development 7424ee4] merge solved
+gi
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git checkout staging
+Switched to branch 'staging'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (staging)
+$ git merge development
+Updating 8da19d0..7424ee4
+Fast-forward
+ four.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (staging)
+$ git status
+On branch staging
+nothing to commit, working tree clean
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (staging)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git merge staging
+Updating 16613ce..7424ee4
+Fast-forward
+ four.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$
