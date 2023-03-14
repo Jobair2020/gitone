@@ -851,3 +851,130 @@ Fast-forward
 
 jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
 $
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git-bash-practice.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git add .
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git commit -m "git bash prictice added"
+[main e537f6d] git bash prictice added
+ 1 file changed, 853 insertions(+)
+ create mode 100644 git-bash-practice.txt
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git push origin main
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (26/26), 4.62 KiB | 675.00 KiB/s, done.
+Total 26 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/Jobair2020/gitone.git
+   7f51758..e537f6d  main -> main
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git checkout staging
+Switched to branch 'staging'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (staging)
+$ git push origin staging
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'staging' on GitHub by visiting:
+remote:      https://github.com/Jobair2020/gitone/pull/new/staging
+remote:
+To https://github.com/Jobair2020/gitone.git
+ * [new branch]      staging -> staging
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (staging)
+$ git checkout development
+Switched to branch 'development'
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git push origin development
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'development' on GitHub by visiting:
+remote:      https://github.com/Jobair2020/gitone/pull/new/development
+remote:
+To https://github.com/Jobair2020/gitone.git
+ * [new branch]      development -> development
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (development)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 660 bytes | 4.00 KiB/s, done.
+From https://github.com/Jobair2020/gitone
+   e537f6d..62ff0c4  main       -> origin/main
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git merge
+Updating e537f6d..62ff0c4
+Fast-forward
+ three.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git pu
+git: 'pu' is not a git command. See 'git --help'.
+
+The most similar commands are
+        pull
+        push
+        p4
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 667 bytes | 3.00 KiB/s, done.
+From https://github.com/Jobair2020/gitone
+   62ff0c4..6010009  main       -> origin/main
+Updating 62ff0c4..6010009
+Fast-forward
+ three.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$ ^C
+
+jobai@DELL MINGW64 /d/3rdYear1stTerm/Software Engineering and IS 3119/Lab/gitone (main)
+$
